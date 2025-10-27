@@ -25,4 +25,10 @@ const App = () => {
   );
 };
 
+return (
+  <div style={{padding: 20, color: '#fff', background: '#222'}}>
+    <strong>App mounted ✓</strong>
+  </div>
+);
+
 export default App;
