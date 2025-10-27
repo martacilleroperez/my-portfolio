@@ -3,7 +3,9 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom"; 
 import "./styleBook.css";
 import "turn.js";
-
+import pic1 from 'url:../assets/libs/aboutMePics/1.png';
+import pic2 from 'url:../assets/libs/aboutMePics/2.png';
+import w from 'url:../assets/libs/aboutMePics/w.png';
 
 const BackBox = ({ link, btnText }) => {
   return (
@@ -73,7 +75,7 @@ function BookAbout() {
   <div className="hard"></div>
   <div>
     <img
-      src="/images/aboutMePics/1.png"
+      src= {pic1}
       alt="meme1"
       onLoad={(e) => e.target.classList.add('visible')}
     />
@@ -81,7 +83,7 @@ function BookAbout() {
   </div>
   <div>
     <img
-      src="images/aboutMePics/w.png"
+      src= {w}
       alt="meme1"
       onLoad={(e) => e.target.classList.add('visible')}
     />
@@ -89,7 +91,7 @@ function BookAbout() {
   </div>
   <div>
     <img
-      src="images/aboutMePics/2.png"
+      src= {pic2}
       alt="meme2"
       onLoad={(e) => e.target.classList.add('visible')}
     />

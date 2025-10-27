@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "scripts": {
     "dev": "parcel index.html",
-    "build": "parcel build index.html --public-url ./"
+    "build": "parcel build src/index.html --public-url ./" 
+
   },
   "dependencies": {
     "@react-three/drei": "^9.77.0",

@@ -5,6 +5,9 @@ import { useGLTF } from '@react-three/drei';
 import kioskUrl from 'url:../assets/libs/kiosk_tjhis_time_fr.glb';
 
 useGLTF.preload(kioskUrl);
+console.log('🧪 kioskUrl =', kioskUrl);
+// Add a quick DOM probe somewhere visible:
+<a href={kioskUrl} target="_blank" rel="noreferrer">Open GLB</a>
 
 const KioskModel = ({ isRotating, setRotating, setCurrentStage, scale, position, rotation, ...props }) => {
   const groupRef = useRef();

@@ -2,6 +2,12 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom"; 
 import "./styleBook.css";
 import "turn.js";
+import pic1 from 'url:../assets/libs/playground/1.png';
+import pic2 from 'url:../assets/libs/playground/2.png';
+import pic3 from 'url:../assets/libs/playground/3.png';
+import pic4 from 'url:../assets/libs/playground/4.png';
+import pic5 from 'url:../assets/libs/playground/5.png';
+import pic6 from 'url:../assets/libs/playground/6.png';
 
   // resize so the top of the screen also adapts
 const BackBox = ({ link, btnText }) => {
@@ -72,7 +78,7 @@ function BookAbout() {
   <div className="hard"></div>
   <div>
     <img
-      src="images/playground/1.png"
+      src={pic1}
       alt="meme1"
       onLoad={(e) => e.target.classList.add('visible')}
     />
@@ -80,7 +86,7 @@ function BookAbout() {
   </div>
   <div>
     <img
-      src="images/playground/2.png"
+      src={pic2}
       alt="meme1"
       onLoad={(e) => e.target.classList.add('visible')}
     />
@@ -88,7 +94,7 @@ function BookAbout() {
   </div>
   <div>
     <img
-      src="images/playground/3.png"
+      src={pic3}
       alt="meme2"
       onLoad={(e) => e.target.classList.add('visible')}
     />
@@ -96,7 +102,7 @@ function BookAbout() {
   </div>
   <div>
     <img
-      src="images/playground/4.png"
+      src={pic4}
       alt="meme3"
       onLoad={(e) => e.target.classList.add('visible')}
     />
@@ -104,7 +110,7 @@ function BookAbout() {
   </div>
   <div>
     <img
-      src="images/playground/5.png"
+      src={pic5}
       alt="meme4"
       onLoad={(e) => e.target.classList.add('visible')}
     />
@@ -113,7 +119,7 @@ function BookAbout() {
   <div>
     <img
     
-      src="images/playground/6.png"
+    src={pic6}
       alt="meme5"
       onLoad={(e) => e.target.classList.add('visible')}
     />
