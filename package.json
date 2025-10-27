@@ -1,39 +1,23 @@
 {
-  "name": "my-portfolio",
-  "version": "1.0.0",
+  "name": "my-react-app",
+  "version": "0.1.0",
   "private": true,
-  "homepage": "https://<user>.github.io/<repo>",
-  "scripts": {
-    "dev": "parcel index.html",
-    "build": "parcel build index.html --public-url ./"
 
+  "homepage": "https://<your-username>.github.io/<repo-name>",
 
-  },
   "dependencies": {
-    "@react-three/drei": "^9.77.0",
-    "@react-three/fiber": "^8.15.7",
-    "jquery": "^3.7.1",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-router-dom": "^6.30.0",
-    "styled-components": "^6.1.17",
-    "three": "^0.176.0",
-    "turn.js": "^1.0.5"
+    "react": "...",
+    "react-dom": "...",
+    "react-scripts": "..."
   },
   "devDependencies": {
-    "@parcel/transformer-raw": "^2.15.2",
-    "autoprefixer": "^10.4.21",
-    "parcel": "^2.15.2",
-    "parcel-reporter-static-files-copy": "^1.5.3",
-    "postcss": "^8.5.3"
+    "gh-pages": "^6.0.0"
   },
-  "staticFiles": {
-    "staticPath": "public"
-  },
-  "extends": "@parcel/config-default",
-  "reporters": [
-    "@parcel/reporter-dev-server",
-    "@parcel/reporter-cli",
-    "parcel-reporter-static-files-copy"
-  ]
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  }
 }
