@@ -2,7 +2,7 @@ import React, { useRef, useEffect } from 'react';
 import { useFrame, useThree } from '@react-three/fiber';
 import * as THREE from 'three';
 import { useGLTF } from '@react-three/drei';
-import kioskUrl from '../assets/libs/kiosk_tjhis_time_fr.glb';
+import kioskUrl from 'url:../assets/libs/kiosk_tjhis_time_fr.glb';
 
 const KioskModel = ({ isRotating, setRotating, setCurrentStage, scale, position, rotation, ...props }) => {
   const groupRef = useRef();
