@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "scripts": {
     "dev": "parcel index.html",
-    "build": "parcel build index.html"
+    "build": "parcel build index.html --public-url ./"
   },
   "dependencies": {
     "@react-three/drei": "^9.77.0",
@@ -22,9 +22,7 @@
     "parcel-reporter-static-files-copy": "^1.5.3",
     "postcss": "^8.5.3"
   },
-  "staticFiles": {
-    "staticPath": "public"
-  },
+  "staticFiles": { "staticPath": "public" },
   "extends": "@parcel/config-default",
   "reporters": [
     "@parcel/reporter-dev-server",
