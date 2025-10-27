@@ -2,13 +2,11 @@
   "name": "my-portfolio",
   "version": "1.0.0",
   "private": true,
-
   "homepage": "https://<user>.github.io/<repo>",
 
   "scripts": {
     "dev": "parcel index.html",
-
-    "build": "parcel build index.html --public-url /<repo>/",
+    "build": "parcel build index.html --public-url /my-portfolio/ --no-source-maps",
     "predeploy": "rm -rf dist && npm run build && node -e \"const fs=require('fs');fs.copyFileSync('dist/index.html','dist/404.html')\"",
     "deploy": "gh-pages -d dist"
   },
