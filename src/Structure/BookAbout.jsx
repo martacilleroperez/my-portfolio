@@ -73,7 +73,7 @@ function BookAbout() {
   <div className="hard"></div>
   <div>
     <img
-      src="images/aboutMePics/1.png"
+      src="/images/aboutMePics/1.png"
       alt="meme1"
       onLoad={(e) => e.target.classList.add('visible')}
     />

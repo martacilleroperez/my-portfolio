@@ -4,15 +4,16 @@ import * as THREE from 'three';
 import { useGLTF } from '@react-three/drei';
 import kioskUrl from 'url:../assets/libs/kiosk_tjhis_time_fr.glb';
 
+useGLTF.preload(kioskUrl);
+
 const KioskModel = ({ isRotating, setRotating, setCurrentStage, scale, position, rotation, ...props }) => {
   const groupRef = useRef();
-  const { gl, viewport } = useThree();
+  const {  viewport } = useThree();
   const lastX = useRef(0);
-  const lastY = useRef(0);
   const rotationSpeed = useRef(0);
   const dampingFact = 0.75;
   const { nodes, materials } = useGLTF(kioskUrl) ;
-  useGLTF.preload(kioskUrl);
+  
   
   const handlePointerDown = (event) => {
     setRotating(true);
