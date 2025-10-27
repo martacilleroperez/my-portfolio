@@ -17,12 +17,15 @@
     "turn.js": "^1.0.5"
   },
   "devDependencies": {
+    "@parcel/transformer-raw": "^2.15.2",
     "autoprefixer": "^10.4.21",
     "parcel": "^2.15.2",
     "parcel-reporter-static-files-copy": "^1.5.3",
     "postcss": "^8.5.3"
   },
-  "staticFiles": { "staticPath": "public" },
+  "staticFiles": {
+    "staticPath": "public"
+  },
   "extends": "@parcel/config-default",
   "reporters": [
     "@parcel/reporter-dev-server",

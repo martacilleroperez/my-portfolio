@@ -978,5 +978,5 @@ useFrame(() => {
   );
 };
 
-useGLTF.preload('/kiosk_tjhis_time_fr.glb');
+useGLTF.preload(kioskUrl);
 export default KioskModel;

@@ -6,7 +6,7 @@ import App from './App';
 const root = createRoot(document.getElementById('root'));
 root.render(<App />);
 
-fetch('/temp_kiosk.glb')
+fetch(kioskUrl)
   .then(res => {
     console.log('✅ Status Code:', res.status);
     return res.text();
