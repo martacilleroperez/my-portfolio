@@ -10,7 +10,7 @@ const KioskModel = ({ isRotating, setRotating, setCurrentStage, scale, position,
   const lastY = useRef(0);
   const rotationSpeed = useRef(0);
   const dampingFact = 0.75;
-  const { nodes, materials } = useGLTF('/kiosk_tjhis_time_fr.glb');
+  const { nodes, materials } = useGLTF('kiosk_tjhis_time_fr.glb') ;
 
   
   const handlePointerDown = (event) => {

@@ -91,3 +91,17 @@
 // - add M8 to the projects 
 // - improvemnts 
 
+//        FOR HWEN I IWLL CHNAGE STUFF 
+// on the treminal : ( this shosuld That push triggers the same “Deploy to GitHub Pages” workflow; once it turns green, your site is updated.)
+//# see what changed
+//git status
+
+//# stage everything you changed
+//git add .
+
+//# commit with a message
+//git commit -m "Describe what you changed"
+
+//# push to GitHub (this triggers the GitHub Actions deploy)
+//git push
+

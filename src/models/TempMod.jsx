@@ -4,7 +4,7 @@ import { useFrame, useThree } from '@react-three/fiber';
 import * as THREE from 'three';
 
 const TempModel = ({ isRotating, setRotating, setCurrentStage, scale, position, rotation, ...props }) => {
-    const { scene } = useGLTF('/temp_kiosk.glb');
+    const { scene } = useGLTF('temp_kiosk.glb');
     const modelRef = useRef();
     const { gl, viewport } = useThree();
     const lastX = useRef(0);
