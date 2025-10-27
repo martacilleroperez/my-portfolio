@@ -2,6 +2,7 @@ import React, { useRef, useEffect } from 'react';
 import { useFrame, useThree } from '@react-three/fiber';
 import * as THREE from 'three';
 import { useGLTF } from '@react-three/drei';
+import kioskUrl from '../assets/libs/kiosk_tjhis_time_fr.glb';
 
 const KioskModel = ({ isRotating, setRotating, setCurrentStage, scale, position, rotation, ...props }) => {
   const groupRef = useRef();
@@ -10,8 +11,8 @@ const KioskModel = ({ isRotating, setRotating, setCurrentStage, scale, position,
   const lastY = useRef(0);
   const rotationSpeed = useRef(0);
   const dampingFact = 0.75;
-  const { nodes, materials } = useGLTF('kiosk_tjhis_time_fr.glb') ;
-
+  const { nodes, materials } = useGLTF(kioskUrl) ;
+  useGLTF.preload(kioskUrl);
   
   const handlePointerDown = (event) => {
     setRotating(true);
@@ -38,7 +39,7 @@ useFrame(() => {
   const rotation = groupRef.current.rotation.y;
   const normalizedRotation = ((rotation % (2 * Math.PI)) + 2 * Math.PI) % (2 * Math.PI);
 
-  // 💡 Always detect currentStage — regardless of isRotating
+
   switch (true) {
     case normalizedRotation > 5 && normalizedRotation <= 7:
       setCurrentStage(4); // About
