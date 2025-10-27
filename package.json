@@ -1,0 +1,34 @@
+{
+  "name": "my-portfolio",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "dependencies": {
+    "@react-three/drei": "^9.77.0",
+    "@react-three/fiber": "^8.15.7",
+    "jquery": "^3.7.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.30.0",
+    "styled-components": "^6.1.17",
+    "three": "^0.176.0",
+    "turn.js": "^1.0.5"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "parcel": "^2.15.2",
+    "parcel-reporter-static-files-copy": "^1.5.3",
+    "postcss": "^8.5.3"
+  },
+  "staticFiles": {
+    "staticPath": "public"
+  },
+  "extends": "@parcel/config-default",
+  "reporters": [
+    "@parcel/reporter-dev-server",
+    "@parcel/reporter-cli",
+    "parcel-reporter-static-files-copy"
+  ]
+}
