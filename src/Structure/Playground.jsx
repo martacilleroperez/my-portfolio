@@ -72,7 +72,7 @@ function BookAbout() {
   <div className="hard"></div>
   <div>
     <img
-      src="/images/playground/1.png"
+      src="images/playground/1.png"
       alt="meme1"
       onLoad={(e) => e.target.classList.add('visible')}
     />
@@ -80,7 +80,7 @@ function BookAbout() {
   </div>
   <div>
     <img
-      src="/images/playground/2.png"
+      src="images/playground/2.png"
       alt="meme1"
       onLoad={(e) => e.target.classList.add('visible')}
     />
@@ -88,7 +88,7 @@ function BookAbout() {
   </div>
   <div>
     <img
-      src="/images/playground/3.png"
+      src="images/playground/3.png"
       alt="meme2"
       onLoad={(e) => e.target.classList.add('visible')}
     />
@@ -96,7 +96,7 @@ function BookAbout() {
   </div>
   <div>
     <img
-      src="/images/playground/4.png"
+      src="images/playground/4.png"
       alt="meme3"
       onLoad={(e) => e.target.classList.add('visible')}
     />
@@ -104,7 +104,7 @@ function BookAbout() {
   </div>
   <div>
     <img
-      src="/images/playground/5.png"
+      src="images/playground/5.png"
       alt="meme4"
       onLoad={(e) => e.target.classList.add('visible')}
     />
@@ -113,7 +113,7 @@ function BookAbout() {
   <div>
     <img
     
-      src="/images/playground/6.png"
+      src="images/playground/6.png"
       alt="meme5"
       onLoad={(e) => e.target.classList.add('visible')}
     />
