@@ -1,8 +1,11 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom"; 
 import "./styleBook.css";
-// Remove this if you're loading scripts manually below
-// import "turn.js";
+
+
+// 👇 ask Parcel for served URLs to these static JS files
+import jqueryUrl from "../assets/libs/jquery.js?url";
+import turnUrl   from "../assets/libs/turn.js?url";
 
 const BackBox = ({ link, btnText }) => (
   <div style={{

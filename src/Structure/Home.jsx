@@ -1,7 +1,7 @@
 // Home.jsx
 import React, { useRef, useState, Suspense } from 'react';
 import { Canvas, useFrame } from '@react-three/fiber';
-import { OrbitControls, Sky } from '@react-three/drei';
+import {Sky } from '@react-three/drei';
 import styled from 'styled-components'; 
 
 import Loader from '../components/Loader.js';

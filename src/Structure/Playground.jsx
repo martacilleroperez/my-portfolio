@@ -1,3 +1,5 @@
+
+
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom"; 
 import "./styleBook.css";
@@ -8,6 +10,10 @@ import pic3 from 'url:../assets/libs/playground/3.png';
 import pic4 from 'url:../assets/libs/playground/4.png';
 import pic5 from 'url:../assets/libs/playground/5.png';
 import pic6 from 'url:../assets/libs/playground/6.png';
+
+// 👇 ask Parcel for served URLs to these static JS files
+import jqueryUrl from "../assets/libs/jquery.js?url";
+import turnUrl   from "../assets/libs/turn.js?url";
 
   // resize so the top of the screen also adapts
 const BackBox = ({ link, btnText }) => {

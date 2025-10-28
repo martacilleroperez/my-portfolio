@@ -1,3 +1,5 @@
+
+
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom"; 
 import "./styleBook.css";
@@ -12,6 +14,11 @@ import pic7 from 'url:../assets/libs/projects/7.png';
 import pic8 from 'url:../assets/libs/projects/8.png';
 import pic9 from 'url:../assets/libs/projects/9.png';
 import pic10 from 'url:../assets/libs/projects/10.png';
+
+// 👇 ask Parcel for served URLs to these static JS files
+import jqueryUrl from "../assets/libs/jquery.js?url";
+import turnUrl   from "../assets/libs/turn.js?url";
+
 
 const BackBox = ({ link, btnText }) => {
   return (

@@ -4,8 +4,6 @@
   "scripts": {
     "dev": "parcel index.html",
     "build": "parcel build index.html --public-url ./"
-
-
   },
   "dependencies": {
     "@react-three/drei": "^9.77.0",
