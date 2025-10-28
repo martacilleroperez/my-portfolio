@@ -1,15 +1,13 @@
-import React from 'react';
-import { createRoot } from 'react-dom/client';
-import { HashRouter } from "react-router-dom";
+import React from "react";
+import { createRoot } from "react-dom/client";
 import App from "./App";
 
+import { HashRouter } from "react-router-dom"; // ✅ keep
 
-// 👇 add this:
-import { BrowserRouter } from "react-router-dom";
 
 const root = createRoot(document.getElementById("root"));
 root.render(
-  <BrowserRouter basename="/my-portfolio">
+  <HashRouter>
     <App />
-  </BrowserRouter>
+  </HashRouter>
 );

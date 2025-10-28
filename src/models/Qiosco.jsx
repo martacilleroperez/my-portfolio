@@ -12,6 +12,7 @@ console.log('🧪 kioskUrl =', kioskUrl);
 const KioskModel = ({ isRotating, setRotating, setCurrentStage, scale, position, rotation, ...props }) => {
   const groupRef = useRef();
   const {  viewport } = useThree();
+  
   const lastX = useRef(0);
   const rotationSpeed = useRef(0);
   const dampingFact = 0.75;
