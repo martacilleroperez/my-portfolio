@@ -4,12 +4,12 @@ import { HashRouter } from "react-router-dom";
 import App from "./App";
 
 
+// 👇 add this:
+import { BrowserRouter } from "react-router-dom";
 
-
-
-console.log('✅ App booting…');
-window.addEventListener('error', e => console.log('❌ window error:', e.error || e.message));
-window.addEventListener('unhandledrejection', e => console.log('❌ unhandled promise:', e.reason));
-
-const root = createRoot(document.getElementById('root'));
-root.render(<App />);
+const root = createRoot(document.getElementById("root"));
+root.render(
+  <BrowserRouter basename="/my-portfolio">
+    <App />
+  </BrowserRouter>
+);
