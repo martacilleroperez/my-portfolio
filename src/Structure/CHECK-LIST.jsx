@@ -96,11 +96,6 @@
 //# see what changed
 //git status
 //git add .
-
 //git commit -m " this works on locla host "
 //git push
 
-git status 
-git add .
-git commit -m " this works on locla host "
-git push
